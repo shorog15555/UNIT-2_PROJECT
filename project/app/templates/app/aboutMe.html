@@ -1,0 +1,26 @@
+{%extends 'app/base.html'%}
+{% load static %}
+{%block title%}{{project.title}}{%endblock%}
+{%block content%}
+    <div class="container">
+        <ol>
+            <li>
+                <h1>about me</h1>
+                <p>(I have many mixed feelings between sadness, joy and anger. Life taught me that there are pure people who offer help without compensation and we do not expect anything from them except to thank them. Our teachers, colleagues, families and before that Allah.”
+
+                    .)Microsoft Bing </p>
+            </li>
+            <li><img src="{% static 'media/aboutMPic.jpg' %}" height="200px" wedth="200px" /></li>
+            
+            
+             
+          
+        </ol>
+    
+    
+        {% for project in projects %}
+            {{project.title}}
+        {% endfor %}
+    
+    </div>
+    {%endblock%}

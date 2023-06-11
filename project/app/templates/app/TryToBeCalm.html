@@ -1,0 +1,28 @@
+{%extends 'app/hello.html'%}
+{% load static%}
+{%block title%}{{project.title}}{%endblock%}
+{%block content%}
+<div class="container">
+  <ol>
+    <li>
+       <h1>listening to the Quran radio</h1>
+    <img src="{% static 'media/QuranRadioPic.jpg' %}"height="150px" wedth="150px">
+    <p>
+       (When the voices of the inner and outer noise rise, we need a dose of calmness and tranquility. We embrace the spirituality derived from the verses of God and the bites and lessons that refine our inside. We feel comfortable and peaceful.)Microsoft Bing</p>
+    </li>
+    <li>
+        <img src="{% static 'media/runToQPic.jpg' %}"height="150px" wedth="150px"/></li>
+       
+       <li><h1>Run to a quiet place</h1>
+        <p>
+         (When things get out of control and descend to the level of danger, run away before you hurt the ones you love. Then recharge your tranquility and manners. Then come back.)Microsoft Bing
+        </p>
+    </li><li>
+        <h1> Do not be too meticulous or you will get tired and tired</h1>
+        <img src="{% static 'media/lessonPic.jpg' %}"height="150px" wedth="150px"/>
+        <p>(When the voices of my children rise, I enter a wave of confusion. How do I receive this crowded array of orders and will it end with the loss of some of them? The correct thing is to filter some of them until I complete the array)Microsoft Bing</p>
+        <p>And sometimes these solutions don't work when we can't tolerate it because we are human</p></li>
+</ol>
+</div>
+{%endblock%}
+

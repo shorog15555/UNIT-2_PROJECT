@@ -1,0 +1,24 @@
+{%extends 'app/base.html'%}
+{% load static %}
+{%block title%}{{project.title}}{%endblock%}
+{%block content%}
+    <div class="container">
+        <ol>
+            <li>
+                <h1>Try to (start)Thank you for your efforts</h1>
+                <p>(programming needs you to start and repeat mistakes and learn. Try and definitely need a lot of help. You will see that they are trivial errors, comma point command forgot to write. And you will see the beauty of those colored .)Microsoft Bing </p>
+            </li>
+            <li><img src="{% static 'media/pythonPic.jpg' %}" height="200px" wedth="200px" /></li>
+            
+            
+             
+          
+        </ol>
+    
+    
+        {% for project in projects %}
+            {{project.title}}
+        {% endfor %}
+    
+    </div>
+    {%endblock%}

@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial
+-scale=1">
+    <title>{%block title%}{%endblock%}</title>
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<body>
+
+    <style>
+        .header {
+    background-color: #F1F1F1;
+    text-align: center;
+     padding: 20px;
+    }
+        body {
+          background-image: url("{% static 'media/backgraundPic.png'%}");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size:cover;
+          color:#FFFACD;
+          text-align:center;
+        }
+        .column {
+                float: left;
+                width: 33.33%;
+              }
+              
+        /* Clear floats after the columns */
+              .row:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+        </style>
+      <audio controls autoplay>
+        
+        <source src="{% static 'media\water-sound-122564.mp3'%}" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+   
+
+        <div class="row">
+                <a href="{% url 'app:hello_page' %}" class="nav-link px-2 text-white col-3">
+                    <img src="{% static 'media/homePagePic.gif'%}"alt="homePagePic" style="width: 350px;;height300px;">
+                </a>
+                <a href="{% url 'app:TryToBeCalm' %}" class="nav-link px-2 text-white col-3">
+                    <img src="{% static 'media/tryToBeCalmPic.jpg'%}"alt="TryToBeCalm"style="width:200px;height:200px;">
+
+                </a>
+                <a href="{% url 'app:sports' %}"alt="lessmilesPic" style="width:90px;height:90px;">
+                    <img src="{% static 'media/lessmilesPic.webp'%}"alt="lessmilesPic" style="width:200px;height:200px;"></a>
+            
+                <a href="{% url 'app:SitesDesign' %}" class="nav-link px-2 text-white col-3">
+                    <img src="{% static 'media/proggramingPic.jpg'%}" alt="proggramingPic" style="width: 200px;height:200px;">
+                </a>
+                        <a href="{% url 'app:aboutMe' %}" class="nav-link px-2 text-white col-3">
+                            <img src="{%static 'media/aboutMePic.jpg'%}" alt ="aboutMe" style="width:200px;height:200px;"> 
+                        </a>
+        
+        
+        </div>
+        
+        </div>
+        </div>
+    </div>
+
+      
+{% block content %}
+
+{% endblock %}
+    
+    
+</body>
+</html

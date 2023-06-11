@@ -1,0 +1,23 @@
+{%extends 'app/hello.html'%}
+{% load static%}
+{%block title%}{{project.title}}{%endblock%}
+{%block content%}
+<div class="container">
+    <ol>
+        <li>
+            <h1>sports</h1>
+            <p>(Exercise is the flavor of happiness. It plays different tunes between jumps and breaks. It releases worries that were condensed with every exhale. And with every pain in the tissues, the hormone of happiness is woven.)Microsoft Bing </p>
+        </li>
+        
+        <li> <li>
+            <img src="https://th.bing.com/th/id/OIP.acI9alp9vPDsWcHwLxD8RAHaHa?pid=ImgDet&rs=1"height="200px" wedth="200px">
+        </li></li>
+    </ol>
+
+
+    {% for project in projects %}
+        {{project.title}}
+    {% endfor %}
+
+</div>
+{%endblock%}
